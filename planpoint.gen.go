@@ -102,6 +102,12 @@ func (e UnitFullStatus) Valid() bool {
 	}
 }
 
+// AuthResponse defines model for AuthResponse.
+type AuthResponse struct {
+	AccessToken string `json:"access_token"`
+	Message     string `json:"message"`
+}
+
 // BatchUpdateUnitsBody defines model for BatchUpdateUnitsBody.
 type BatchUpdateUnitsBody struct {
 	Ids       []string                `json:"ids"`
@@ -255,12 +261,6 @@ type LoginBody struct {
 	Impersonate *bool               `json:"impersonate,omitempty"`
 	Password    *string             `json:"password,omitempty"`
 	Username    openapi_types.Email `json:"username"`
-}
-
-// LoginResponse defines model for LoginResponse.
-type LoginResponse struct {
-	AccessToken string `json:"access_token"`
-	Message     string `json:"message"`
 }
 
 // Project defines model for Project.
@@ -2594,7 +2594,7 @@ func (r UpdateUnitResponse) StatusCode() int {
 type LoginResponse struct {
 	Body         []byte
 	HTTPResponse *http.Response
-	JSON200      *LoginResponse
+	JSON200      *AuthResponse
 	JSON400      *ErrorResponse
 	JSON401      *ErrorResponse
 	JSON403      *ErrorResponse
@@ -4186,7 +4186,7 @@ func ParseLoginResponse(rsp *http.Response) (*LoginResponse, error) {
 
 	switch {
 	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
-		var dest LoginResponse
+		var dest AuthResponse
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
 			return nil, err
 		}
