@@ -8,6 +8,8 @@ Official Go SDK for the [PlanPoint](https://app.planpoint.io) API.
 go get github.com/planpoint-io/planpoint-sdk-go
 ```
 
+> **Note:** Responses use `JSON200` or `JSON201` depending on the endpoint. `login`, `getFloors`, and `getLeads` return `JSON200`. All other endpoints return `JSON201`.
+
 ## Quick Start
 
 ```go
