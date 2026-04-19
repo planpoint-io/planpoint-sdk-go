@@ -272,5 +272,8 @@ List all leads for a project. Requires auth.
 ## Links
 
 - [PlanPoint App](https://app.planpoint.io)
+- [Go SDK on GitHub](https://github.com/planpoint-io/planpoint-sdk-go)
 - [npm TypeScript SDK](https://www.npmjs.com/package/@planpoint/sdk)
 - [PyPI Python SDK](https://pypi.org/project/planpoint-sdk)
+- [PHP SDK](https://github.com/planpoint-io/planpoint-sdk-php)
+- [Java SDK](https://github.com/planpoint-io/planpoint-sdk-java)
