@@ -1,6 +1,6 @@
 # planpoint-sdk-go
 
-Official Go SDK for the [PlanPoint](https://app.planpoint.io) API.
+Official Go SDK for the [Planpoint](https://app.planpoint.io) API.
 
 ## Installation
 
@@ -271,9 +271,9 @@ List all leads for a project. Requires auth.
 
 ## Links
 
-- [PlanPoint App](https://app.planpoint.io)
-- [Go SDK on GitHub](https://github.com/planpoint-io/planpoint-sdk-go)
-- [npm TypeScript SDK](https://www.npmjs.com/package/@planpoint/sdk)
-- [PyPI Python SDK](https://pypi.org/project/planpoint-sdk)
-- [PHP SDK](https://github.com/planpoint-io/planpoint-sdk-php)
-- [Java SDK](https://github.com/planpoint-io/planpoint-sdk-java)
+- **[Install: go get github.com/planpoint-io/planpoint-sdk-go](https://github.com/planpoint-io/planpoint-sdk-go)**
+- [Planpoint App](https://app.planpoint.io)
+- [TypeScript SDK on npm](https://www.npmjs.com/package/@planpoint/sdk)
+- [Python SDK on PyPI](https://pypi.org/project/planpoint-sdk)
+- [PHP SDK on GitHub](https://github.com/planpoint-io/planpoint-sdk-php)
+- [Java SDK on GitHub](https://github.com/planpoint-io/planpoint-sdk-java)
